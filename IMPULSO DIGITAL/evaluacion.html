@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario de Alfabetización Digital</title>
+
+<style>
+    
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+}
+
+.contenedor{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    color:#151516;
+}
+
+.pregunta{
+    margin-top:25px;
+}
+
+.pregunta h3{
+    color:#333;
+}
+
+label{
+    display:block;
+    padding:8px;
+    cursor:pointer;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 30px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0b5ed7;
+}
+
+#resultado{
+    margin-top:30px;
+    padding:20px;
+    font-size:22px;
+    text-align:center;
+    font-weight:bold;
+    border-radius:10px;
+}
+  header { /* dar color al encabezado */ 
+
+            background: #2e8b57;      /* Verde */
+            color: black; 
+            text-align: center;
+            padding: 15px 10px;
+        }
+        /* Elimina márgenes */
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Color de fondo */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Menú */
+.menu{
+    list-style: none;
+    display: flex;           /* Hace que el menú sea horizontal */
+    justify-content: center; /* Centra el menú */
+    background-color: #003366;
+}
+
+/* Opciones */
+.menu li{
+    margin: 0;
+}
+
+/* Enlaces */
+.menu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+/* Efecto al pasar el mouse */
+.menu li a:hover{
+    background-color: #0059b3;
+}
+/* Sección principal */
+.principal{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+}
+
+/* Texto */
+.texto{
+    width:50%;
+}
+
+.texto h1{
+    font-size:45px;
+    color:#0A4D8C;
+    margin-bottom:20px;
+}
+
+.texto p{
+    font-size:20px;
+    text-align:justify;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.boton{
+    background:#0A4D8C;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.boton:hover{
+    background:#1565C0;
+}
+
+/* Imagen */
+.imagen{
+    width:45%;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:500px;
+}
+
+/* Pie de página */
+footer{
+    background:#0A4D8C;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+footer p{
+    margin:5px;
+    font-size:16px;
+}
+</style>
+
+<header>
+        <img SRC= "logo.png" class="LOGO UNL" alt="IMAGEN" style="height: 80px;"> 
+        <h1 id="titulo">UNIVERSIDAD NACIONAL DE LOJA</h1>
+        <h2 id="carrera">CARRERA: PEDAGOGÍA DE LAS CIENCIAS EXPERIMENTALES INFORMÁTICA</h2>
+        <br>
+        <hr>
+    
+    </header>
+    <body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="alfabetizacion.html">Alfabetización en información y datos</a></li>
+            <li><a href="creacion.html">Creación de contenido digital</a></li>
+            <li><a href="evaluacion.html">Evaluación y retroalimentación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+<h1>Cuestionario de Alfabetización Digital</h1>
+
+<form id="quiz">
+
+<div class="pregunta">
+<h3>1. ¿Qué es la alfabetización digital?</h3>
+
+<label><input type="radio" name="p1" value="0"> Aprender únicamente a usar redes sociales.</label>
+
+<label><input type="radio" name="p1" value="1"> Conjunto de habilidades para utilizar tecnologías digitales de manera responsable.</label>
+
+<label><input type="radio" name="p1" value="0"> Solo aprender informática.</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>2. ¿Cuál es un motor de búsqueda?</h3>
+
+<label><input type="radio" name="p2" value="1"> Google</label>
+
+<label><input type="radio" name="p2" value="0"> Word</label>
+
+<label><input type="radio" name="p2" value="0"> PowerPoint</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>3. ¿Cuál es una buena práctica al buscar información?</h3>
+
+<label><input type="radio" name="p3" value="0"> Copiar cualquier página.</label>
+
+<label><input type="radio" name="p3" value="1"> Verificar que la fuente sea confiable.</label>
+
+<label><input type="radio" name="p3" value="0"> No revisar la fecha.</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>4. ¿Qué herramienta sirve para crear infografías?</h3>
+
+<label><input type="radio" name="p4" value="1"> Canva</label>
+
+<label><input type="radio" name="p4" value="0"> Bloc de notas</label>
+
+<label><input type="radio" name="p4" value="0"> Paint únicamente</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>5. ¿Qué representan los derechos de autor?</h3>
+
+<label><input type="radio" name="p5" value="0"> Se pueden copiar todas las obras.</label>
+
+<label><input type="radio" name="p5" value="1"> Protegen las creaciones de los autores.</label>
+
+<label><input type="radio" name="p5" value="0"> Solo aplican a libros impresos.</label>
+
+</div>
+
+<button type="button" onclick="calificar()">
+Finalizar Cuestionario
+</button>
+
+</form>
+
+<div id="resultado"></div>
+
+</div>
+
+<script>
+
+function calificar(){
+
+let total=0;
+
+let preguntas=["p1","p2","p3","p4","p5"];
+
+for(let i=0;i<preguntas.length;i++){
+
+let respuesta=document.querySelector('input[name="'+preguntas[i]+'"]:checked');
+
+if(respuesta){
+
+total+=parseInt(respuesta.value);
+
+}
+
+}
+
+let nota=(total*2).toFixed(1);
+
+let mensaje="";
+
+if(nota>=9){
+
+mensaje="🏆 ¡Excelente!";
+
+}else if(nota>=7){
+
+mensaje="😊 Muy bien.";
+
+}else if(nota>=5){
+
+mensaje="🙂 Aprobado.";
+
+}else{
+
+mensaje="❌ Debes reforzar tus conocimientos.";
+
+}
+
+document.getElementById("resultado").innerHTML=
+
+`
+<h2>Calificación: ${nota} / 10</h2>
+<p>${mensaje}</p>
+`;
+
+}
+
+</script>
+<!-- Pie de página -->
+<footer>
+    <p>© 2026 Proyecto de Vinculación | Elaborado por Leidi Gaona Viteri</p>
+    <p> Unidad Educativa Celica  - Primeros de Bachillerato</p>
+    <p>Universidad Nacional de Loja (UNL)</p>
+</footer>
+
+</body>
+
+</html>

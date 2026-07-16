@@ -1,0 +1,396 @@
+<!DOCTYPE hyml> <!-- INICIA PAGINA HTML-->
+<HTML LANG="ES"> <!-- IDIOMA ESPAÑOL-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    
+         <meta charset="UTF-8">
+         <title>IMPULSO DIGITAL</title>
+          <style>
+
+            header { /* dar color al encabezado */ 
+
+            background: #2e8b57;      /* Verde */
+            color: black; 
+            text-align: center;
+            padding: 15px 10px;
+        }
+
+        /* Elimina márgenes */
+        {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+/* Color de fondo */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Menú */
+.menu{
+    list-style: none;
+    display: flex;           /* Hace que el menú sea horizontal */
+    justify-content: center; /* Centra el menú */
+    background-color: #003366;
+}
+
+/* Opciones */
+.menu li{
+    margin: 0;
+}
+
+/* Enlaces */
+.menu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+/* Efecto al pasar el mouse */
+.menu li a:hover{
+    background-color: #0059b3;
+}
+/* Sección principal */
+.principal{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+}
+
+/* Texto */
+.texto{
+    width:50%;
+}
+
+.texto h1{
+    font-size:45px;
+    color:#0A4D8C;
+    margin-bottom:20px;
+}
+
+.texto p{
+    font-size:20px;
+    text-align:justify;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.boton{
+    background:#0A4D8C;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.boton:hover{
+    background:#1565C0;
+}
+
+/* Imagen */
+.imagen{
+    width:45%;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:500px;
+}
+
+/* Objetivo */
+.objetivo{
+    width:80%;
+    margin:50px auto;
+    padding:30px;
+    background:#f5f5f5;
+    border-left:6px solid #0A4D8C;
+    border-radius:10px;
+}
+
+.objetivo h2{
+    color:#0A4D8C;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.objetivo p{
+    font-size:18px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* Pie de página */
+footer{
+    background:#0A4D8C;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px;
+    font-size:16px;
+}
+
+.titulo{
+    text-align: center;
+    color: #0A4D8C;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Recuadro principal */
+.info-box{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Texto */
+.texto{
+    flex: 1;
+    text-align: justify;
+}
+
+.texto h2{
+    color: #0d6efd;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.texto p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Imagen */
+.imagen{
+    flex: 1;
+    text-align: center;
+}
+
+.imagen img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Adaptación para celulares */
+@media(max-width:768px){
+    .info-box{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto{
+        text-align: justify;
+    }
+}
+          </style>
+    </head>
+
+    <header>
+        <img SRC= "logo.png" class="LOGO UNL" alt="IMAGEN" style="height: 80px;"> 
+        <h1 id="titulo">UNIVERSIDAD NACIONAL DE LOJA</h1>
+        <h2 id="carrera">CARRERA: PEDAGOGÍA DE LAS CIENCIAS EXPERIMENTALES INFORMÁTICA</h2>
+        <br>
+        <hr>
+    
+    </header>
+    <body>
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Gestión Educativa</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="alfabetizacion.html">Alfabetización en información y datos</a></li>
+            <li><a href="creacion.html">Creación de contenido digital</a></li>
+            <li><a href="evaluacion.html">Evaluación y retroalimentación</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<div class="contenedor">
+
+<h1 class="titulo">
+    Las herramientas digitales convierten las ideas en recursos visuales que facilitan el aprendizaje, la comunicación y la creatividad
+</h1>
+
+
+
+<section class="info-box">
+    <div class="texto">
+        <h2>Elaboración de Documentos, Presentaciones, Infografías e Imágenes</h2>
+
+        <p>
+            La elaboración de documentos, presentaciones, infografías e imágenes mediante herramientas digitales permite crear contenidos visuales y educativos de manera profesional. Estas aplicaciones facilitan la organización de la información, el trabajo colaborativo y la comunicación efectiva en entornos académicos y laborales.
+
+El uso de plataformas como Canva, Google Docs, Google Slides, Microsoft Word, Microsoft Excel y Microsoft PowerPoint ayuda a desarrollar competencias digitales, mejorar la creatividad y presentar la información de forma clara y atractiva.
+        </p>
+
+        
+        </p>
+
+       
+    </div>
+
+    <div class="imagen">
+        <img src="herramientas.jpeg" alt="Búsqueda de información en Internet">
+    </div>
+</section>
+
+
+
+</div>
+
+<div class="contenedor">
+
+<section class="info-box">
+    <div class="texto">
+        <h2>Herramientas Digitales</h2>
+
+        <p>
+            La organización y almacenamiento de información digital consiste en clasificar, ordenar y guardar archivos electrónicos de manera que sean fáciles de encontrar, utilizar y proteger. Una buena organización mejora la productividad, evita la pérdida de información y facilita el trabajo colaborativo.
+        </p>
+
+        <h2>📝 Microsoft Word</h2>
+        <p>
+            
+Es un procesador de texto que permite crear documentos como informes, cartas, tareas, proyectos y trabajos de investigación. Ofrece herramientas para dar formato al texto, insertar imágenes, tablas, gráficos y referencias.
+        </p>
+
+        <h2>📊 Microsoft Excel</h2>
+
+        <p>
+            
+Es una hoja de cálculo utilizada para organizar datos, realizar cálculos, elaborar tablas, gráficos y analizar información mediante fórmulas y funciones.
+        </p>
+
+        <h2>📽️ Microsoft PowerPointl</h2>
+
+        <p>
+            
+Permite crear presentaciones multimedia con texto, imágenes, videos, animaciones y gráficos para comunicar ideas de manera dinámica y profesional.
+        </p>
+
+        <h2>🎨 Canva</h2>
+
+        <p>
+            
+Es una plataforma de diseño gráfico en línea que facilita la creación de infografías, presentaciones, carteles, publicaciones para redes sociales, certificados y otros recursos visuales mediante plantillas prediseñadas.
+        </p>
+
+         <h2>📄 Google Docs</h2>
+
+        <p>
+            
+Es un editor de documentos en línea que permite crear, editar y compartir archivos de texto de forma colaborativa y en tiempo real desde cualquier dispositivo con acceso a Internet.
+        </p>
+
+         <h2>📑 Google Slides</h2>
+
+        <p>
+            
+Es una herramienta para diseñar presentaciones en línea que facilita el trabajo colaborativo, la incorporación de imágenes, videos y animaciones, así como la edición simultánea entre varios usuarios.
+        </p>
+
+       
+    </div>
+
+    <div class="imagen">
+        <img src="ofice.jpeg" alt="Búsqueda de información en Internet">
+    </div>
+</section>
+
+
+
+</div>
+
+<div class="contenedor">
+
+<section class="info-box">
+    <div class="texto">
+        <h2>Beneficios</h2>
+
+        
+        <p>
+            
+📚 Facilitan el aprendizaje mediante recursos interactivos y contenido multimedia.
+🤝 Promueven el trabajo colaborativo permitiendo que varias personas editen documentos en tiempo real.
+⏱️ Ahorran tiempo al automatizar tareas y simplificar la creación de documentos y presentaciones.
+🎨 Fomentan la creatividad mediante plantillas, imágenes, gráficos e infografías.
+☁️ Permiten almacenar información en la nube, facilitando el acceso desde cualquier dispositivo.
+📈 Mejoran la productividad al organizar la información y optimizar el trabajo académico y profesional.
+🌍 Favorecen el acceso a la información desde cualquier lugar con conexión a Internet.
+💡 Desarrollan competencias digitales necesarias para el estudio, el trabajo y la vida cotidiana.
+        </p>
+
+        <h2>Recomendaciones</h2>
+
+        <p>
+            
+Organizar la información antes de diseñar el recurso.
+Utilizar plantillas con un diseño limpio y atractivo.
+Emplear imágenes e íconos de buena calidad.
+Mantener colores y tipografías coherentes.
+Revisar la ortografía antes de compartir el documento.
+Guardar copias de seguridad en la nube o en dispositivos externos.
+        </p>
+
+       
+    </div>
+
+    <div class="imagen">
+        <img src="digitales.png" alt="Búsqueda de información en Internet">
+    </div>
+</section>
+
+
+
+</div>
+
+
+
+
+
+<!-- Pie de página -->
+<footer>
+    <p>© 2026 Proyecto de Vinculación | Elaborado por Leidi Gaona Viteri</p>
+    <p> Unidad Educativa Celica  - Primeros de Bachillerato</p>
+    <p>Universidad Nacional de Loja (UNL)</p>
+</footer>
+
+</body>
+
+</html>

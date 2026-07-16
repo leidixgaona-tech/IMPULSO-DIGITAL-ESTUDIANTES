@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario de Alfabetización Digital</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+}
+
+.contenedor{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+}
+
+.pregunta{
+    margin-top:25px;
+}
+
+.pregunta h3{
+    color:#333;
+}
+
+label{
+    display:block;
+    padding:8px;
+    cursor:pointer;
+}
+
+button{
+    margin-top:30px;
+    padding:15px 30px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0b5ed7;
+}
+
+#resultado{
+    margin-top:30px;
+    padding:20px;
+    font-size:22px;
+    text-align:center;
+    font-weight:bold;
+    border-radius:10px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="contenedor">
+
+<h1>Cuestionario de Alfabetización Digital</h1>
+
+<form id="quiz">
+
+<div class="pregunta">
+<h3>1. ¿Qué es la alfabetización digital?</h3>
+
+<label><input type="radio" name="p1" value="0"> Aprender únicamente a usar redes sociales.</label>
+
+<label><input type="radio" name="p1" value="1"> Conjunto de habilidades para utilizar tecnologías digitales de manera responsable.</label>
+
+<label><input type="radio" name="p1" value="0"> Solo aprender informática.</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>2. ¿Cuál es un motor de búsqueda?</h3>
+
+<label><input type="radio" name="p2" value="1"> Google</label>
+
+<label><input type="radio" name="p2" value="0"> Word</label>
+
+<label><input type="radio" name="p2" value="0"> PowerPoint</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>3. ¿Cuál es una buena práctica al buscar información?</h3>
+
+<label><input type="radio" name="p3" value="0"> Copiar cualquier página.</label>
+
+<label><input type="radio" name="p3" value="1"> Verificar que la fuente sea confiable.</label>
+
+<label><input type="radio" name="p3" value="0"> No revisar la fecha.</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>4. ¿Qué herramienta sirve para crear infografías?</h3>
+
+<label><input type="radio" name="p4" value="1"> Canva</label>
+
+<label><input type="radio" name="p4" value="0"> Bloc de notas</label>
+
+<label><input type="radio" name="p4" value="0"> Paint únicamente</label>
+
+</div>
+
+<div class="pregunta">
+
+<h3>5. ¿Qué representan los derechos de autor?</h3>
+
+<label><input type="radio" name="p5" value="0"> Se pueden copiar todas las obras.</label>
+
+<label><input type="radio" name="p5" value="1"> Protegen las creaciones de los autores.</label>
+
+<label><input type="radio" name="p5" value="0"> Solo aplican a libros impresos.</label>
+
+</div>
+
+<button type="button" onclick="calificar()">
+Finalizar Cuestionario
+</button>
+
+</form>
+
+<div id="resultado"></div>
+
+</div>
+
+<script>
+
+function calificar(){
+
+let total=0;
+
+let preguntas=["p1","p2","p3","p4","p5"];
+
+for(let i=0;i<preguntas.length;i++){
+
+let respuesta=document.querySelector('input[name="'+preguntas[i]+'"]:checked');
+
+if(respuesta){
+
+total+=parseInt(respuesta.value);
+
+}
+
+}
+
+let nota=(total*2).toFixed(1);
+
+let mensaje="";
+
+if(nota>=9){
+
+mensaje="🏆 ¡Excelente!";
+
+}else if(nota>=7){
+
+mensaje="😊 Muy bien.";
+
+}else if(nota>=5){
+
+mensaje="🙂 Aprobado.";
+
+}else{
+
+mensaje="❌ Debes reforzar tus conocimientos.";
+
+}
+
+document.getElementById("resultado").innerHTML=
+
+`
+<h2>Calificación: ${nota} / 10</h2>
+<p>${mensaje}</p>
+`;
+
+}
+
+</script>
+
+</body>
+</html>

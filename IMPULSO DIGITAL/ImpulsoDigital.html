@@ -1,0 +1,204 @@
+<!DOCTYPE hyml> <!-- INICIA PAGINA HTML-->
+<HTML LANG="ES"> <!-- IDIOMA ESPAÑOL-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    
+         <meta charset="UTF-8">
+         <title>IMPULSO DIGITAL</title>
+          <style>
+
+            header { /* dar color al encabezado */ 
+
+            background-color:rgb(120, 230, 208);
+            color: black; 
+            text-align: center;
+            padding: 15px 10px;
+        }
+
+        /* Elimina márgenes */
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Color de fondo */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Menú */
+.menu{
+    list-style: none;
+    display: flex;           /* Hace que el menú sea horizontal */
+    justify-content: center; /* Centra el menú */
+    background-color: #003366;
+}
+
+/* Opciones */
+.menu li{
+    margin: 0;
+}
+
+/* Enlaces */
+.menu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+/* Efecto al pasar el mouse */
+.menu li a:hover{
+    background-color: #0059b3;
+}
+/* Sección principal */
+.principal{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px;
+}
+
+/* Texto */
+.texto{
+    width:50%;
+}
+
+.texto h1{
+    font-size:45px;
+    color:#0A4D8C;
+    margin-bottom:20px;
+}
+
+.texto p{
+    font-size:20px;
+    text-align:justify;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.boton{
+    background:#0A4D8C;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.boton:hover{
+    background:#1565C0;
+}
+
+/* Imagen */
+.imagen{
+    width:45%;
+    text-align:center;
+}
+
+.imagen img{
+    width:100%;
+    max-width:500px;
+}
+
+/* Objetivo */
+.objetivo{
+    width:80%;
+    margin:50px auto;
+    padding:30px;
+    background:#f5f5f5;
+    border-left:6px solid #0A4D8C;
+    border-radius:10px;
+}
+
+.objetivo h2{
+    color:#0A4D8C;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.objetivo p{
+    font-size:18px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* Pie de página */
+footer{
+    background:#0A4D8C;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:5px;
+    font-size:16px;
+}
+          </style>
+    </head>
+
+    <header>
+        <img SRC= "logo.png" class="LOGO UNL" alt="IMAGEN" style="height: 80px;"> 
+        <h1 id="titulo">UNIVERSIDAD NACIONAL DE LOJA</h1>
+        <h2 id="carrera">CARRERA: PEDAGOGÍA DE LAS CIENCIAS EXPERIMENTALES INFORMÁTICA</h2>
+        <br>
+        <hr>
+    
+    </header>
+    <body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="alfabetizacion.html">Alfabetización en información y datos</a></li>
+            <li><a href="creacion.html">Creación de contenido digital</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Página principal -->
+    <section class="principal">
+
+        <div class="texto">
+            <h1>Bienvenidos</h1>
+
+            <p>
+                Alfabetización en información y datos: búsqueda de información en Internet, evaluación de fuentes confiables, organización y almacenamiento de información digital, uso ético de la información y derechos de autor.
+            </p>
+
+            <p>
+                Creación de contenido digital: elaboración de documentos, presentaciones, infografías e imágenes utilizando herramientas digitales como Canva, Google Docs, Google Slides y Microsoft PowerPoint.
+            </p>
+
+            <a href="inicio.html" class="boton">Inicio</a>
+
+            
+        </div>
+
+        <div class="imagen">
+            <img src="pricinpal.jpeg" alt="Gestión Educativa">
+        </div>
+
+    </section>
+
+    <!-- Objetivo del recurso -->
+<section class="objetivo">
+    <h2>Objetivo del Recurso</h2>
+    <p>
+        Diseñar una página web educativa que fortalezca las competencias de alfabetización en información y datos y de creación de contenido digital en los estudiantes de Primero de Bachillerato de la Unidad Educativa Celica, mediante recursos interactivos que favorezcan el aprendizaje autónomo y el desarrollo de habilidades digitales.
+    </p>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <p>© 2026 Proyecto de Vinculación | Elaborado por Leidi Gaona Viteri</p>
+    <p> Unidad Educativa Celica  - Primeros de Bachillerato</p>
+    <p>Universidad Nacional de Loja (UNL)</p>
+</footer>
+
+</body>
